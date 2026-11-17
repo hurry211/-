@@ -12,6 +12,8 @@
 | `lab01_spatial` | 图像增强的空域方法 | 均衡化、规定化、Roberts/Sobel/Prewitt/Laplacian、均值/中值/高斯/双边/引导/NLM滤波 | 核心函数从PDF恢复；主程序受分页换行影响已重构；在替代输入上通过测试 |
 | `lab02_frequency` | 图像增强的频域方法 | DFT/FFT、幅度与相位、fftshift、理想/巴特沃斯/高斯低高通、振铃、成对陷波、PSNR | 从PDF附录恢复，已在当前环境重运行；缺失四张原始周期噪声图的部分自动跳过 |
 
+| `lab03_motion_psf` | MATLAB motion blur PSF | `my_motion_psf.m`, `test_motion_psf.m` | 历史报告与独立`.m`文件已找回；未在本次环境重新运行MATLAB |
+
 ## 环境与运行
 
 Python 3.10+，建议建立虚拟环境：
@@ -60,6 +62,10 @@ python lab02_frequency/frequency_lab.py --interactive 11.jpg
 - 频域实验缺失四张原始图像，不能复现该小节的最终去噪图，且不能把合成周期噪声结果当作真实图像结果。
 - LHE对噪声敏感且较慢；CLAHE的限幅机制和双线性插值有利于平衡增强程度与块边界连续性。
 - 如后续取得原始脚本、原始图片与报告，按独立提交补齐并重新核对。
+
+## MATLAB补充实验
+
+找回了 `lab01_spatial/run_histogram_experiment.m` 以及 `lab03_motion_psf/matlab/` 下的两份运动模糊PSF MATLAB脚本；需要安装MATLAB及相关工具箱，并准备实验输入。本次未重跑MATLAB，历史报告中63组PSF对比结果不能当作本次复现实测。运动模糊PSF比较与逆滤波/维纳反卷积是不同任务，后者不作为已完成实验。
 
 ## 来源与署名
 
