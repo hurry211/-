@@ -11,7 +11,6 @@
 | `lab00_local_hist` | LHE / CLAHE | 局部CDF、直方图限幅、双线性插值 | 从PDF附录恢复，已在当前环境重运行 |
 | `lab01_spatial` | 图像增强的空域方法 | 均衡化、规定化、Roberts/Sobel/Prewitt/Laplacian、均值/中值/高斯/双边/引导/NLM滤波 | 核心函数从PDF恢复；主程序受分页换行影响已重构；在替代输入上通过测试 |
 | `lab02_frequency` | 图像增强的频域方法 | DFT/FFT、幅度与相位、fftshift、理想/巴特沃斯/高斯低高通、振铃、成对陷波、PSNR | 从PDF附录恢复，已在当前环境重运行；缺失四张原始周期噪声图的部分自动跳过 |
-
 | `lab03_motion_psf` | MATLAB motion blur PSF | `my_motion_psf.m`, `test_motion_psf.m` | 历史报告与独立`.m`文件已找回；未在本次环境重新运行MATLAB |
 
 ## 环境与运行
