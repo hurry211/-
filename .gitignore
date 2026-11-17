@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+.DS_Store
+lab00_local_hist/results/
+lab01_spatial/figures/
+lab02_frequency/results/
+lab02_frequency/input_images/*
+!lab02_frequency/input_images/.gitkeep
+*.npy
